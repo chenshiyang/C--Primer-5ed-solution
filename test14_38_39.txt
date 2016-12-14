@@ -1,0 +1,9 @@
+first  last
+Input iterators to the initial and final positions of the sequence of elements The range used is first last  which contains all the elements between first and last  including the element pointed by first but not the element pointed by last
+pred
+Unary function that accepts an element in the range as argument  and returns a value convertible to bool The value returned indicates whether the element is counted by this function
+The function shall not modify its argument
+This can either be a function pointer or a function object
+Throws if pred throws or if any of the operations on iterators throws
+Note that invalid arguments cause undefined behavior
+This kind of iterator has a special state as an end of stream iterator  which is acquired if an input operations fails   as returned by fail after an operation with the associated stream  and is also the resulting value of a default-constructed object
